@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> <u>Multiples of 5 from 0 to 100</u></title>
+  </head>
+  <body>
+    <p>Counting by 5, starting from 0 is currently happening in the console. Perhaps in the future,
+      we will be more interactive and let you pick the starting number...or we'll give you the illusion of
+      picking the starting number by letting you pick any number, provided it is zero.</p>
+    <script>
+      console.log("Let's count from 0 to 100 by 5")
+      console.log("First up the mighty while loop")
+      var count = 0;
+      while (count <=100) {
+        console.log(count + "\n");
+        count+=5;
+      }
+      console.log("next up, the cousin to the while loop, the do while")
+      count = 0;
+      do {
+        console.log(count)
+        count = count + 5;
+      } while (count<=100);
+
+      console.log("finally, the ubiquitous for loop")
+      for (count = 0; count <= 100; count+=5) {
+        console.log(count + "\n");
+      }
+    </script>
+  </body>
